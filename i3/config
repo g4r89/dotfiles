@@ -147,8 +147,10 @@ bar {
         status_command i3status
 }
 
-# Display
+# Tweaks
 exec_always xrandr --output HDMI2 --primary --output HDMI3 --left-of HDMI2
+exec_always xset -dpms && xset s off
+exec_always setxkbmap "us,ru" ",winkeys" "grp:alt_shift_toggle,grp_led:scroll'"
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
 new_window pixel 2
@@ -164,7 +166,7 @@ bindsym $mod+F2 exec chromium-browser
 
 
 # Power control
-set $Locker i3lock -t -i /home/andrey/bin/i3lock/lock.png
+set $Locker i3lock -t -i /home/andrey/dotfiles/i3lock/lock.png
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
 bindsym l exec --no-startup-id $Locker, mode "default"
@@ -181,7 +183,6 @@ bindsym Escape mode "default"
 
 bindsym $mod+Pause mode "$mode_system"
 
-#hot keys
+# Hot keys
 bindsym $mod+t border toggle
-bindsym $mod+F1 exec python2 ~/ya.disk/bin/cisco/cisco_call.py
-
+bindsym $mod+F1 exec python2 ~/dotfiles/cisco/cisco_call.py
