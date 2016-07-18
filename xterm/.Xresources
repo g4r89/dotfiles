@@ -1,0 +1,11 @@
+!General
+xterm*utf8: 1
+xterm*locale: 1
+xterm*metaSendsEscape: true
+xterm*termName: xterm-256color
+
+!Colors
+xterm*background: #000000
+xterm*foreground: #ffffff
+
+xterm*font: -*-terminus-medium-r-*-*-12-*-*-*-*-*-iso10646-*

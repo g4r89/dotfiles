@@ -151,6 +151,7 @@ bar {
 exec_always xrandr --output HDMI2 --primary --output HDMI3 --left-of HDMI2
 exec_always xset -dpms && xset s off
 exec_always setxkbmap "us,ru" ",winkeys" "grp:alt_shift_toggle,grp_led:scroll'"
+exec_always xrdp -load ~/dotfiles/xterm/.Xresources
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
 new_window pixel 2
@@ -160,7 +161,6 @@ new_float normal
 hide_edge_borders none
 
 # Start Applications
-#bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
 bindsym $mod+F2 exec chromium-browser
 #bindsym $mod+F3 exec pcmanfm
 
