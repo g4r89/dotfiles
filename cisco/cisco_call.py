@@ -2,7 +2,7 @@
 __author__ = 'selfin'
 import os, requests, re, string, sys
 
-SELF_PHONE = '9805'
+SELF_PHONE = '1111'
 
 def prepare_num():
     sel = os.popen('xsel').read()
