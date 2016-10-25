@@ -154,7 +154,7 @@ exec_always setxkbmap "us,ru" ",winkeys" "grp:alt_shift_toggle,grp_led:scroll'"
 exec_always xrdb -load ~/dotfiles/xterm/.Xresources
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-new_window pixel 2
+new_window pixel 1
 new_float normal
 
 # Hide borders
@@ -187,3 +187,9 @@ bindsym $mod+Pause mode "$mode_system"
 # Hot keys
 bindsym $mod+t border toggle
 bindsym $mod+F1 exec python2 ~/dotfiles/cisco/cisco_call.py
+
+# class                 border  backgr. text    indicator
+client.focused          #4c7899 #0099ff #ffffff #ff0000
+client.focused_inactive #333333 #222222 #ffffff #484e50
+client.unfocused        #333333 #222222 #888888 #292d2e
+client.urgent           #2f343a #900000 #ffffff #900000
