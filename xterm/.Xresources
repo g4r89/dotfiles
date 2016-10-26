@@ -1,6 +1,6 @@
 !General
 xterm*utf8: 1
-xterm*locale: 1
+xterm*locale: true
 xterm*metaSendsEscape: true
 xterm*termName: xterm-256color
 
